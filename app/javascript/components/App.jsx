@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Home } from 'Home';
 
-function App() {
-  return(
-    <div>
-      React App!
-    </div>
-  )
-}
-
-export default App;
+export default (
+  <Router>
+    <Switch>
+      <Route path="/" exact component={Home} />
+    </Switch>
+  </Router>
+)
