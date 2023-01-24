@@ -1,6 +1,6 @@
 import { Table, message, Popconfirm } from "antd";
 import React from "react";
-// import AddBeerModal from "AddBeerModal"
+import AddBeerModal from "./AddBeerModal"
 
 class Beers extends React.Component {
 
@@ -102,7 +102,7 @@ class Beers extends React.Component {
       <>
         <Table className="table-striped-rows" dataSource={this.state.beers} columns={this.columns} pagination={{ pageSize: 5 }} />
 
-        {/* <AddBeerModal reloadBeers={this.reloadBeers} /> */}
+        <AddBeerModal reloadBeers={this.reloadBeers} />
       </>
     );
   }
